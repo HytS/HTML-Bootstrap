@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<input type="text" class="form-control" placeholder="Text input">
+
+<textarea class="form-control" rows="3"></textarea>
+
+<!--多选框 单选框-->
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+    </label>
+</div>
+
+<!--内联单选框-->
+<!--通过将 .checkbox-inline 或 .radio-inline 类
+应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。-->
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+
+<!--如果需要 <label> 内没有文字，输入框（input）正是你所期望的。 目前只适用于非内联的 checkbox 和 radio。
+ 请记住，仍然需要为使用辅助技术的用户提供某种形式的 label（例如，使用 aria-label）。-->
+<div class="checkbox">
+    <label>
+        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+    </label>
+</div>
+
+<!--下拉列表-->
+<select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+
+<!--对于标记了 multiple 属性的 <select> 控件来说，默认显示多选项。-->
+<select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+
+<!--静态控件-->
+<!--如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加 .form-control-static 类即可。-->
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">email@example.com</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+</form>
+
+<!--焦点状态-->
+<!--我们将某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。-->
+
+<!--禁用状态-->
+<!--为输入框设置 disabled 属性可以禁止其与用户有任何交互（焦点、输入等）。
+被禁用的输入框颜色更浅，并且还添加了 not-allowed 鼠标状态。
+-->
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+
+
+</body>
+</html>
