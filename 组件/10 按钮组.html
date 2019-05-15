@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+       <!-- 新 Bootstrap 核心 CSS 文件 -->
+       <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- 可选的Bootstrap主题文件（一般不使用） -->
+       <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+   
+       <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+       <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+       <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+       <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 按钮组 -->
+    <div class="btn-group" >
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+
+      <div class="btn-toolbar" role="toolbar">
+
+        <div class="btn-group" role="group" >
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+            <button type="button" class="btn btn-default">3</button>
+        </div>
+
+        <div class="btn-group" role="group" >
+            <button type="button" class="btn btn-default">4</button>
+            <button type="button" class="btn btn-default">5</button>
+        </div>
+
+        <div class="btn-group" role="group" >
+            <button type="button" class="btn btn-default">6</button>
+        </div>
+
+      </div>
+
+      <!-- 只要给 .btn-group 加上 .btn-group-* 类，
+        就省去为按钮组中的每个按钮都赋予尺寸类了，如果包含了多个按钮组时也适用。 -->
+<div class="btn-group btn-group-lg" role="group" >
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <button type="button" class="btn btn-default">3</button>
+  </div>
+<div class="btn-group btn-group-sm" role="group" >
+    <button type="button" class="btn btn-default">4</button>
+    <button type="button" class="btn btn-default">5</button>
+</div>
+<div class="btn-group btn-group-xs" role="group" > 
+    <button type="button" class="btn btn-default">6</button>
+</div>
+<br>
+
+<!-- 想要把下拉菜单混合到一系列按钮中，只须把 .btn-group 放入另一个 .btn-group 中。 -->
+<div class="btn-group" role="group" >
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+  
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--垂直显示-->
+  <div class="btn-group-vertical" role="group" >
+    <div class="btn-group" >
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+  </div>
+
+  <!-- 两边对齐的按钮组 -->
+  <div class="btn-group btn-group-justified" role="group" >
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Left</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Middle</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</div>
+
+<!-- 按钮式下拉菜单 -->
+<div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
