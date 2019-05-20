@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .nav>li>a:hover {
+            background-color: darkorange;
+
+        }
+        .nav-pills>li>a:hover{
+            color: #fff;
+            border-radius: 0;
+        }
+        li{
+            /*width: 16%;*/
+            text-align: center;
+            margin-left: 25px;
+
+        }
+    </style>
+</head>
+<body>
+<!---->
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+<!--胶囊式标签页-->
+<!--胶囊是标签页也是可以垂直方向堆叠排列的。只需添加 .nav-stacked 类。-->
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+<nav>
+    <ul class="nav nav-tabs">
+        <li><a href="">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Action <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </a></li>
+
+    </ul>
+</nav>
+
+<nav>
+    <ul class="nav nav-pills">
+
+        <li><a href="#">校园网</a></li>
+        <li><a href="#">校园网</a></li>
+        <li><a href="#">校园网</a></li>
+        <li><a href="#">校园网</a></li>
+        <li><a href="#">校园网</a></li>
+        <li><a href="#">校园网</a></li>
+
+    </ul>
+</nav>
+</body>
+</html>
