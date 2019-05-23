@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .list-group-item.active,.list-group-item.active:hover{
+            background-color: darkblue;
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list-group">
+        <li class="list-group-item">真常应物</li>
+        <li class="list-group-item">真常得性</li>
+        <li class="list-group-item">常应常静</li>
+        <li class="list-group-item">常清静矣</li>
+    </ul>
+
+<!--徽章-->
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge">10</span>真常应物</li>
+        <li class="list-group-item">真常得性</li>
+        <li class="list-group-item">常应常静</li>
+        <li class="list-group-item">常清静矣</li>
+    </ul>
+
+<!--链接-->
+    <div class="list-group">
+        <a href="" class="list-group-item active">真常应物</a>
+        <a href="" class="list-group-item ">真常得性</a>
+    </div>
+
+<!--按钮-->
+    <div class="list-group">
+        <button type="button" class="list-group-item">真常应物</button>
+        <button type="button" class="list-group-item disabled">真常得性</button>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-danger">真常应物</li>
+        <li class="list-group-item list-group-item-info">真常得性</li>
+        <li class="list-group-item list-group-item-warning">场影场景</li>
+        <li class="list-group-item list-group-item-success">常清静一</li>
+    </ul>
+
+    <!--定制内容-->
+    <div class="list-group">
+        <a href="" class="list-group-item active">
+            <h4 class="list-group-item-heading">清静经</h4>
+            <p class="list-group-item-text">
+                真常应物，真常得性，场影场景，常清静矣
+            </p>
+        </a>
+    </div>
+</body>
+</html>
