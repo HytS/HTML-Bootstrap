@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+        <h4>林钟十六</h4>
+        <button class="btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#myModal">click</button>
+
+        <!--tabindex--按esc也能退出模态框 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--&times; 代表x号-->
+                        <button class="close" aria-hidden="true"
+                                data-dismiss="modal">&times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">模态框标题</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        文本
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">
+                            关闭
+                        </button>
+                        <button class="btn btn-promary">提交</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){$('myModal').modal('show')})
+            $(function(){$('myModal').modal('shown')})
+            $(function(){$('myModal').modal('hide')})
+            $(function(){$('myModal').modal('hiden')})
+        </script>
+        <script>
+            $(function(){
+                $("#myModal").on('show.bs.modal',
+                function(){
+                    alert("show.bs.modal")
+                });
+
+                $("#myModal").on('shown.bs.modal',
+                        function(){
+                            alert("shown.bs.modal")
+                        });
+
+                $("#myModal").on('hide.bs.modal',
+                        function(){
+                            alert("hide.bs.modal")
+                        });
+
+                $("#myModal").on('hiden.bs.modal',
+                        function(){
+                            alert("hiden.bs.modal")
+                        });
+
+            })
+        </script>
+</body>
+</html>
