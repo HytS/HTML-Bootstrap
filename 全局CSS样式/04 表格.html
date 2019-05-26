@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+         /*定制css */
+         .table-hover tbody tr:hover {
+             color: #212529;
+             background-color: lawngreen;
+         }
+    </style>
+</head>
+<body>
+
+<!--为任意 <table> 标签添加 .table 类可以为其赋予基本的样式
+ — 少量的内补（padding）和水平方向的分隔线-->
+<table class="table">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>马玉婷</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>郝雨濛</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>吕文慧</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+</table>
+
+<!--条纹状表格  通过 .table-striped 类可以给 <tbody> 之内的每一行增加斑马条纹样式。-->
+<table class="table table-striped">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>马玉婷</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>郝雨濛</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>吕文慧</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+</table>
+
+<!--添加 table-bordered 类为表格和其中的每个单元格增加边框。-->
+<table class="table table-bordered">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>马玉婷</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>郝雨濛</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>吕文慧</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+</table>
+
+<!--通过添加 .table-hover 类可以让 <tbody> 中的每一行对鼠标悬停状态作出响应。-->
+<table class="table table-hover">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>马玉婷</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>郝雨濛</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr>
+        <td>吕文慧</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+</table>
+
+<!--通过添加table-condensed 类可以让表格更加紧凑，
+单元格中的内补（padding）均会减半。-->
+
+<table class="table ">
+    <tr class="active">
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td class="success">马玉婷</td>
+        <td class="success">22</td>
+        <td class="success">女</td>
+    </tr>
+    <tr class="active">
+        <td>郝雨濛</td>
+        <td>22</td>
+        <td>女</td>
+    </tr>
+    <tr class="active">
+        <td class="success">吕文慧</td>
+        <td class="active">22</td>
+        <td class="danger">女</td>
+    </tr>
+</table>
+<!--active 鼠标悬停在行或单元格上时所设置的颜色
+ success 绿色 warning 黄色 danger 红色 info 蓝色-->
+
+   <!--响应式布局-->
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>马玉婷</td>
+            <td>22</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>郝雨濛</td>
+            <td>22</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>吕文慧</td>
+            <td>22</td>
+            <td>女</td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>
