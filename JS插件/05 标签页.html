@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active">
+            <a href="#qingjin" data-toggle="tab">清静经</a>
+        </li>
+
+        <li>
+            <a href="#jingxin" data-toggle="tab">净心咒</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#" data-toggle="dropdown" class="dropdownmenu" id="myTabDrop">
+                其他
+            </a>
+
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop">
+
+                <li><a href="#partOne" data-toggle="tab" tabindex="-1">11</a></li>
+                <li><a href="#partTwo" data-toggle="tab" tabindex="-1">22</a></li>
+
+            </ul>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="jingxin">
+            <p>
+                真常应物，真常得性，常应常静，常清净矣
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="qingjin">
+            <p>
+                三魂永久，魄无丧倾
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="partOne">
+            <p>
+                凑数用的
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="partTwo">
+            <p>
+                这个也是凑数用的
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        $(function () {
+            //改变active的标签 eq：返回一个jQuery对象
+           // $('#myTab li:eq(1) a').tab('show');
+        });
+
+
+        /*
+        * show.bs.tab	该事件在标签页显示时触发，
+        * 但是必须在新标签页被显示之前。
+        * 分别使用 event.target 和 event.relatedTarget 来定位到激活的标签页
+        * 和前一个激活的标签页。
+        *
+        * shown 该事件在标签页显示之后触发
+        * */
+        $(function(){
+//            属性选择器[]
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                // 获取已激活的标签页的名称
+                var activeTab = $(e.target).text();
+                // 获取前一个激活的标签页的名称
+                var previousTab = $(e.relatedTarget).text();
+                alert(previousTab+'--'+activeTab);
+                alert(activeTab+'--'+previousTab);
+                //$(".active-tab span").html(activeTab);
+                //$(".previous-tab span").html(previousTab);
+            });
+        });
+    </script>
+</body>
+</html>
