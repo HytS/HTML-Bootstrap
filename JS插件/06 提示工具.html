@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h4></h4>
+    <a href="" class="tooltip-test" data-toggle="tooltip" title="默认">
+        默认的tooltip
+    </a>
+
+    <a href="" class="tooltip-test" data-toggle="tooltip"
+       data-placement="right" title="右边">
+        右边的tooltip
+    </a>
+
+    <a href=""  data-toggle="tooltip" title="左边" data-placement="left">
+        左边的tooltip
+    </a>
+
+    <a href="" data-toggle="tooltip" title="底部" data-placement="bottom">
+        底部的tooltip
+    </a>
+
+    <a href=""  data-toggle="tooltip" title="顶部" data-placement="top">
+        顶部的tooltip
+    </a>
+
+    <button class="btn btn-Default" data-toggle="tooltip"
+            title="default" >default
+    </button>
+
+    <button class="btn btn-Default" data-toggle="tooltip"
+            title="left" data-placement="left">default
+    </button>
+
+    <button class="btn btn-Default" data-toggle="tooltip"
+            title="right" data-placement="right">right
+    </button>
+
+    <button class="btn btn-Default" data-toggle="tooltip"
+            title="top" data-placement="top">top
+    </button>
+
+    <button class="btn btn-Default" data-toggle="tooltip"
+            title="bottom" data-placement="bottom">bottom
+    </button>
+
+    <script>
+        //提示工具需要jQuery激活
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+</body>
+</html>
