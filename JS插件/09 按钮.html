@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <button class="btn btn-primary" data-loading-text="加载中" >
+        加载
+    </button>
+
+    <button class="btn btn-primary" data-toggle="buttons" >
+        改变激活状态为按压状态
+    </button>
+
+    <div class="btn-group" data-toggle="buttons">
+        <button class="btn btn-primary">
+            <input type="checkbox">checkbox
+        </button>
+
+        <button class="btn btn-primary">
+            <input type="checkbox">checkbox
+        </button>
+
+    </div>
+    <hr>
+    <div class="btn-group" data-toggle="buttons">
+        <button class="btn btn-primary">
+            <input type="radio">radio
+        </button>
+
+        <button class="btn btn-primary">
+            <input type="radio">radio
+        </button>
+
+    </div>
+    <hr>
+    <!--按钮方法-->
+    <p>演示button('toggle)</p>
+    <div id="button1" class="bs-example">
+        <button class="btn btn-primary" data-loading-text="loading">
+            button1
+        </button>
+    </div>
+
+    <div id="button2" class="bs-example">
+        <button class="btn btn-primary" data-loading-text="loading">
+            button1
+        </button>
+    </div>
+
+    <div id="button3" class="bs-example">
+        <button class="btn btn-primary" data-loading-text="loading">
+            button1
+        </button>
+    </div>
+
+    <button  id="button4" class="btn btn-primary" data-complete-text="loading">
+        button1
+    </button>
+    <script>
+        $(function () {
+            //??
+            $(".btn").button('加载中').delay(2000).queue(function () {
+                // $(this).reset();
+                //$(this).dequeue();
+            });
+        });
+
+        $(function () {
+            $("#button1 .btn").click(function () {
+
+                $(this).button('toggle');
+            });
+
+
+        });
+
+        $(function () {
+            $("#button2 .btn").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+
+                });
+            });
+        });
+
+        $(function () {
+            $("#button3 .btn").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+                    $(this).button('reset');
+                });
+            });
+        });
+
+        $(function () {
+            $("#button3 .btn").click(function () {
+                $(this).button('loading').delay(1000).queue(function () {
+                    $(this).button('complete');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
