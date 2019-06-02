@@ -59,11 +59,25 @@
             title="top" data-placement="top">top
     </button>
 
+    <!--data-trigger 默认是hover 显示tooltip方式-->
     <button class="btn btn-Default" data-toggle="tooltip"
-            title="bottom" data-placement="bottom">bottom
+            title="bottom" data-placement="bottom" data-trigger="click">bottom
     </button>
 
+    <p class="tooltip-options">
+        <a href="" data-toggle="tooltip" title="<h2>title</h2>">atest</a>
+    </p>
+
     <script>
+//        一切设置要在属性选择器之前完成
+        $(function(){
+            $('.tooltip-options a').tooltip({html:true,placement:'top'});
+        });
+
+        $(function(){
+            $('.btn').tooltip({html:true,placement:'top'});
+        });
+
         //提示工具需要jQuery激活
         $(function () {
             $("[data-toggle='tooltip']").tooltip();
