@@ -19,35 +19,47 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn btn-default" data-toggle="popover"
-        title="popoverTitle" data-placement="default" data-content="content">
+
+        <a href="#" data-toggle="popover" title="title"
+           data-content="content" data-trigger="hover">
+            title
+        </a>
+
+        <button class="btn btn-warning popover-toggle" data-toggle="popover"
+        title="<h1>popoverTitle</h1>" data-container="body"
+                data-placement="default" data-content="<h4>content</h4>"
+                data-trigger="hover" >
             leftPopover
         </button>
 
-        <button class="btn btn-info" data-toggle="popover"
-                title="popoverTitle" data-placement="left" data-content="content">
-            leftPopover
-        </button>
+        <!--<button class="btn btn-info" data-toggle="popover"-->
+                <!--title="popoverTitle" data-placement="left" data-content="content">-->
+            <!--leftPopover-->
+        <!--</button>-->
 
-        <button class="btn btn-warning" data-toggle="popover"
-                title="popoverTitle" data-placement="right" data-content="content">
-            leftPopover
-        </button>
+        <!--<button class="btn btn-warning" data-toggle="popover"-->
+                <!--title="popoverTitle" data-placement="right" data-content="content">-->
+            <!--leftPopover-->
+        <!--</button>-->
 
-        <button class="btn btn-danger" data-toggle="popover"
-                title="popoverTitle" data-placement="top" data-content="content">
-            leftPopover
-        </button>
+        <!--<button class="btn btn-danger" data-toggle="popover"-->
+                <!--title="popoverTitle" data-placement="top" data-content="content">-->
+            <!--leftPopover-->
+        <!--</button>-->
 
-        <button class="btn btn-success" data-toggle="popover"
-                title="popoverTitle" data-placement="bottom" data-content="content">
-            leftPopover
-        </button>
+        <!--<button class="btn btn-success" data-toggle="popover"-->
+                <!--title="popoverTitle" data-placement="bottom" data-content="content">-->
+            <!--leftPopover-->
+        <!--</button>-->
 
     </div>
 
     <script>
-        $("[data-toggle = 'popover']").popover();
+        $(function (){
+            $("div>a").popover();
+            $(".btn").popover({html:true,placement:'bottom'});
+            $("[data-toggle='popover']").popover();
+        })
     </script>
 </body>
 </html>
