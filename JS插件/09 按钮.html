@@ -48,6 +48,7 @@
 
     </div>
     <hr>
+
     <!--按钮方法-->
     <p>演示button('toggle)</p>
     <div id="button1" class="bs-example">
@@ -57,56 +58,57 @@
     </div>
 
     <div id="button2" class="bs-example">
-        <button class="btn btn-primary" data-loading-text="loading">
-            button1
+        <button class="btn btn-success" data-loading-text="loading">
+            button2
         </button>
     </div>
 
     <div id="button3" class="bs-example">
-        <button class="btn btn-primary" data-loading-text="loading">
-            button1
+        <button class="btn btn-warning" data-loading-text="loading">
+            button3
         </button>
     </div>
 
-    <button  id="button4" class="btn btn-primary" data-complete-text="loading">
-        button1
+    <button  id="button4" class="btn btn-info" data-complete-text="loading">
+        button4
     </button>
+
     <script>
+//        $(function () {
+//            //??
+//            $(".btn").button('加载中').delay(2000).queue(function () {
+//                // $(this).reset();
+//                //$(this).dequeue();
+//            });
+//        });
+//
+//        $(function () {
+//            $("#button1 .btn").click(function () {
+//
+//                $(this).button('toggle');
+//            });
+//
+//
+//        });
+//
+//        $(function () {
+//            $("#button2 .btn").click(function () {
+//                $(this).button('loading').delay(1000).queue(function () {
+//
+//                });
+//            });
+//        });
+//
         $(function () {
-            //??
-            $(".btn").button('加载中').delay(2000).queue(function () {
-                // $(this).reset();
-                //$(this).dequeue();
-            });
-        });
-
-        $(function () {
-            $("#button1 .btn").click(function () {
-
-                $(this).button('toggle');
-            });
-
-
-        });
-
-        $(function () {
-            $("#button2 .btn").click(function () {
-                $(this).button('loading').delay(1000).queue(function () {
-
-                });
-            });
-        });
-
-        $(function () {
-            $("#button3 .btn").click(function () {
-                $(this).button('loading').delay(1000).queue(function () {
+            $("#button3").click(function () {
+                $(this).button('loading').delay(100).queue(function () {
                     $(this).button('reset');
                 });
             });
         });
 
         $(function () {
-            $("#button3 .btn").click(function () {
+            $("#button4").click(function () {
                 $(this).button('loading').delay(1000).queue(function () {
                     $(this).button('complete');
                 });
