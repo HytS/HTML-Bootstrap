@@ -20,46 +20,47 @@
 <body>
     <div id="alertDefault" class="alert alert-default">
         <a href="" class="close" data-dismiss="alert">&times;</a>
-        <p>真常英武</p>
+        <p>真常得性</p>
     </div>
+
     <div id="alertDanger" class="alert alert-danger">
         <a href="" class="close" data-dismiss="alert">&times;</a>
-        <p>真常英武</p>
+        <p>真常应物</p>
 
     </div>
+
     <div id="alertWarning" class="alert alert-warning">
         <a href="" class="close" data-dismiss="alert">&times;</a>
-        <p>真常英武</p>
-
+        <p>常应常静</p>
     </div>
+
     <div class="alert alert-info">
         <a href="" class="close" data-dismiss="alert">&times;</a>
-        <p>真常英武</p>
-
+        <p>常清净矣</p>
     </div>
+
     <div class="alert alert-success">
         <a href="" class="close" data-dismiss="alert">&times;</a>
-        <p>真常英武</p>
-
+        <p>清静经</p>
     </div>
 
     <script>
-        $(".close").click(function () {
-            $("#alertDefault").alert();//让所有警告框具有关闭功能
-        });
+//        $(".close").click(function () {
+//            $("#alertDefault").alert();//让所有警告框具有关闭功能
+//        });
 
-        $(".close").click(function () {
-            //关闭所有警告框  但是要都设置
-            $("#alertDanger").alert('close');
-            $("#alertWarning").alert('close');
-        });
+//        $(".close").click(function () {
+//            //关闭所有警告框  但是要都设置
+//            $("#alertDanger").alert('close');
+//            $("#alertWarning").alert('close');
+//        });
 
-        $("#alertDefault").bind('close.bs.alert',function () {
-            alert("警告框被调用时打印")
-        });
+//        $("#alertDefault").bind('close.bs.alert',function () {
+//            alert("警告框被调用时打印")
+//        });
 
         $("#alertDefault").bind('closed.bs.alert',function () {
-            alert("警告框被关闭时打印")
+            alert("警告框被关闭")
         })
 
     </script>
