@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #section1{
+            height: 500px;
+            width: 100%;
+            background-color: saddlebrown;
+        }
+        #section2{
+            height: 500px;
+            width: 100%;
+            background-color: salmon;
+        }
+        #section3{
+            height: 500px;
+            width: 100%;
+            background-color: sandybrown;
+        }
+        #section4{
+            height: 500px;
+            width: 100%;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div data-target="#myScroll" data-spy="scroll">
+        <div class="container">
+            <div class="row">
+                <nav class="col-xs-3" id="myScroll">
+                    <div class="container-fulid">
+                        <div class="container-fulid">
+                            <ul class="nav-pills nav-stacked">
+                                <li class="active"><a href="#section1">section1</a></li>
+                                <li ><a href="#section2">section1</a></li>
+                                <li><a href="#section3">section1</a></li>
+                                <li class="dropdown ">
+                                    <a class="dropdown-toggle nav-pills" data-toggle="dropdown"
+                                    >section1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#section4">section1</a></li>
+                                        <li><a href="#section4">section1</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="col-xs-9">
+                    <div id="section1">section1</div>
+                    <div id="section2">section1</div>
+                    <div id="section3">section1</div>
+                    <div id="section4">section1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
